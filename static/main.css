@@ -1,0 +1,60 @@
+body {
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.titulo {
+    font-family: "Permanent Marker", cursive;
+}
+
+.tarea_hecha {
+    text-decoration: line-through;
+    color: #cfcfcf;
+}
+
+.tarea-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarea-contenido {
+    margin-bottom: 7px; /* Espacio entre el texto de la tarea y los iconos */
+}
+
+.info_de_tarea {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: space-between;
+
+}
+
+.categoria, .fecha_limite {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.iconos-tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Estilos para el modo oscuro */
+body.modo-oscuro {
+    color: #aaa9b0; /* Color de texto en el modo oscuro */
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Estilos específicos para los recuadros de las tareas en el modo oscuro */
+body.modo-oscuro .card,
+body.modo-oscuro .card-body,
+body.modo-oscuro .list-group-item {
+    background-color: #252526;
+    color: #d7d7d9;
+}
+
